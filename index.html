@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Grid Example</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/formGrid.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	</head>
+	<body>		
+		<div id="wrapper">			
+
+			<div class="flexWrapper">
+				<header id="header">
+					<div class="container-fluid">
+						<!-- Header start -->
+						<!-- Header end -->
+					</div>
+				</header>
+				
+				<div id="content">			
+					<div id="main" class="container-fluid">
+
+						<h1>Form Grid Example</h1>
+						<div class="defaultFormV4">
+							<form method="POST" action="" id="registrationForm">
+							
+							<!-- START predefined meest voorkomende blokken -->
+							<div class="spacer"></div>
+							<h2>Persoonsgegevens</h2>
+							<div class="elementWrapper">
+								<label class="main">Voorletters</label>
+									<div class="primary">
+										<input id="voorletters" class="small1 text" type="text" value="" name="voorletters" />
+									</div>
+									<div class="secondary"></div>
+							</div>
+							<div class="elementWrapper" id="valTest">
+								<label class="main">Voornaam</label>
+								<div class="primary">
+									<input id="Firstname" class=" text" type="text" value="" name="Firstname" />
+								</div>
+								<div  class="secondary">
+									<div class="soft">Valdatie voorbeeld</div>
+									<label class="label error" style="display:none"><i class="fa fa-exclamation-circle"></i>Validatie bericht</label>
+								</div>
+							</div>
+
+							<div class="elementWrapper">
+								<label class="main">Tussenvoegsel, Achternaam</label>
+								<div class="primary">
+									<input type="text" class="mini2 text" value="" name="tussenvoegsel" id="tussenvoegsel" />
+									<input type="text" class="big1 text" value="" name="achternaam" id="achternaam" />			
+								</div>
+								<div class="secondary">
+								</div>
+							</div>
+							<div class="elementWrapper">
+								<label class="main">Geboortedatum</label>
+									<div class="primary">
+										<input id="geboortedatum" class="small1 text" type="text" value="" name="geboortedatum" />
+									</div>
+									<div class="secondary">
+										<div class="soft">Voer in als DD/MM/JJJJ</div>
+									</div>
+							</div>
+							
+							<h2>Adresgegevens</h2>
+							<div class="elementWrapper">
+								<label class="main">Adres</label>
+									<div class="primary">
+										<input id="straat" class="medium2 text" type="text" value="" name="straat" />
+										<input id="huisnummer" class="mini1 text" type="text" value="" name="huisnummer" />
+										<input id="toevoeging" class="mini1 text" type="text" value="" name="toevoeging" />
+									</div>
+									<div class="secondary">
+										<div class="soft">Straat, huisnummer, toevoeging</div>
+									</div>
+							</div>
+							<div class="elementWrapper">
+								<label class="main">Woonplaats</label>
+									<div class="primary">
+										<input type="text" class="mini2 text" value="" name="postcode" id="postcode" title="postcode" />
+										<input type="text" class="big1 text" value="" name="woonplaats" id="woonplaats" title="woonplaats" />
+									</div>
+									<div class="secondary">
+										<div class="soft">Postcode, Woonplaats</div>
+									</div>
+							</div>
+								
+							<h2>Contactgegevens</h2>
+							<div class="elementWrapper">
+								<label class="main">Telefoon</label>
+									<div class="primary">
+										<input id="telefoon" class=" text" type="text" value="" name="telefoon" />
+									</div>
+									<div class="secondary"></div>
+							</div>
+							<div class="elementWrapper">
+								<label class="main">Email</label>
+									<div class="primary">
+										<input id="email" class=" text" type="text" value="" name="email" />
+									</div>
+									<div class="secondary"></div>
+							</div>
+							
+							<div class="spacer"></div>
+							<!-- END predefined meest voorkomende blokken -->
+
+								<div class="elementWrapper">
+								<label class="main">Geslacht</label>
+								<p>Lorem ipsum dolor sit amet, equidem vivendum erroribus ei has, est et noster sapientem. Malis adipisci ea duo. Autem epicurei vix ea, summo mediocritatem at sit, graece adipisci consequat mea ut.</p>
+									<div class="primary">
+										<div class="subElementWrapper third">
+											<input type="radio" value="0" class="radio" id="Gender0" name="Gender" />
+											<label class="label" for="Gender0"> Man</label>
+										</div>
+										<div class="subElementWrapper third">
+											<input type="radio" value="0" class="radio" id="Gender1" name="Gender" />
+											<label class="label" for="Gender1"> Vrouw</label>
+										</div>
+									</div>
+									<div class="secondary"></div>
+								</div>
+								
+								<div class="full elementWrapper">
+								<label class="main">Gemengde velden</label>
+									<div class="primary">
+										<input type="text" class="small2 text" value="" />
+										<input type="text" class="medium2 text" value="" />
+										<input type="text" class="small1 text" value="" />
+										<input type="text" class="mini1 text" value="" />
+									</div>
+									<div class="secondary"></div>
+								</div>	
+								
+								
+								<h2>fixed widths</h2>
+								
+								<div class="elementWrapper">
+									<label class="main">mini1</label>
+									<div class="primary">
+										<input type="text" class="mini1 text" value="" name="mini1" id="mini0" />
+										<input type="text" class="mini1 text" value="" name="mini1" id="mini01" />
+										<input type="text" class="mini1 text" value="" name="mini1" id="mini02" />
+										<input type="text" class="mini1 text" value="" name="mini1" id="mini03" />
+										<input type="text" class="mini1 text" value="" name="mini1" id="mini04" />
+									</div>
+									<div class="secondary">
+										<div class="soft">Tussenvoegsel, Achternaam</div>
+									</div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">mini2</label>
+									<div class="primary">
+										<input type="text" class="mini2 text" value="" name="mini22" id="mini2" />
+										<input type="text" class="mini2 text" value="" name="mini22" id="mini21" />
+										<input type="text" class="mini2 text" value="" name="mini22" id="mini22" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">small1</label>
+									<div class="primary">
+										<input type="text" class="small1 text" value="" name="small1" id="small1" />
+										<input type="text" class="small1 text" value="" name="small11" id="small11" />
+										<input type="text" class="small1 text" value="" name="small111" id="small111" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">small2</label>
+									<div class="primary">
+										<input type="text" class="small2 text" value="" name="small2" id="small2" />
+										<input type="text" class="small2 text" value="" name="small12" id="small12" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">medium1</label>
+									<div class="primary">
+										<input type="text" class="medium1 text" value="" name="PostalCode" id="medium1" />
+										<input type="text" class="medium1 text" value="" name="City" id="City1" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">medium2</label>
+									<div class="primary">
+										<input type="text" id="Cityx" name="Cityx" value="" class="medium2 text" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">big1</label>
+									<div class="primary">
+										<input type="text" id="Cbig1" name="big1" value="" class="big1 text" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								<div class="elementWrapper">
+									<label class="main">big2</label>
+									<div class="primary">
+										<input type="text" id="Cbig1" name="big2" value="" class="big2 text" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								
+								<h2>relative widths</h2>
+								
+								<div class="elementWrapper">
+								<label class="main">total(!)</label>
+									<div class="primary">
+										<input type="text" class="total text" value="" name="PostalCode" id="fullReg" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">half</label>
+									<div class="primary">
+										<input type="text" class="half text" value="" name="PostalCode" id="half" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">thirds</label>
+									<div class="primary">
+										<input type="text" class="third text" value="" name="PostalCode" id="third" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">quarters</label>
+									<div class="primary">
+										<input type="text" class="quarter text" value="" name="PostalCode" id="quarter" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">fifths</label>
+									<div class="primary">
+										<input type="text" class="fifth text" value="" name="PostalCode" id="fifth" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">mix n match</label>
+									<div class="primary">
+										<input type="text" class="fifth text" value="" name="PostalCode" id="fifth9" />
+										<input type="text" class="quarter text" value="" name="PostalCode2" id="quarter9" />
+										<input type="text" class="third text" value="" name="PostalCode2" id="third9" />
+									</div>
+									<div class="secondary">
+										<a href="#">Klik hier voor meer info</a>
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">textarea</label>
+									<div class="primary">
+										<textarea class=""></textarea>
+									</div>
+									<div class="secondary">
+										<div class="soft">Soft/"help" tekst </div>
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">Select</label>
+									<div class="primary">
+										<select id="dropdown0" name="dropdown0" class="full">
+										  <option value="">- Kies een optie</option>
+										  <option value="1">Optie 1</option>
+										  <option value="2">Optie 2</option>
+										  <option value="3">Optie 3</option>
+										</select>
+									</div>
+									<div class="secondary"></div>
+								</div>
+						<div class="spacer"></div>
+						</div>
+
+							<div class="defaultFormV4 leftLabel">
+								<h2>Left labels</h2>
+							
+								<div class="elementWrapper">
+								<label class="main">full</label>
+									<div class="primary">
+										<input type="text" class="full text" value="" name="fullLeftLabel" id="fullLefLabel" />
+									</div>
+									<div class="secondary">
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">half</label>
+									<div class="primary">
+										<input type="text" class="half text" value="" name="PostalCode" id="half" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">thirds</label>
+									<div class="primary">
+										<input type="text" class="third text" value="" name="PostalCode" id="third" />
+										<input type="text" class="third text" value="" name="PostalCode1" id="third1" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">quarters</label>
+									<div class="primary">
+										<input type="text" class="quarter text" value="" name="PostalCode" id="quarter" />
+										<input type="text" class="quarter text" value="" name="PostalCode1" id="quarter1" />
+										<input type="text" class="quarter text" value="" name="PostalCode2" id="quarter2" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">fifths</label>
+									<div class="primary">
+										<input type="text" class="fifth text" value="" name="PostalCode" id="fifth" />
+										<input type="text" class="fifth text" value="" name="PostalCode1" id="fifth1" />
+										<input type="text" class="fifth text" value="" name="PostalCode2" id="fifth2" />
+										<input type="text" class="fifth text" value="" name="PostalCode2" id="fifth3" />
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">mix n match</label>
+									<div class="primary">
+										<input type="text" class="fifth text" value="" name="PostalCode" id="fifth9" />
+										<input type="text" class="quarter text" value="" name="PostalCode2" id="quarter9" />
+										<input type="text" class="third text" value="" name="PostalCode2" id="third9" />
+									</div>
+									<div class="secondary">
+										<a href="#">Klik hier voor meer info</a>
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">textarea</label>
+									<div class="primary">
+										<textarea class="full"></textarea>
+									</div>
+									<div class="secondary">
+										<div class="soft">Soft/"help" tekst </div>
+									</div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">Select</label>
+									<div class="primary">
+										<select id="dropdown1" name="dropdown1" class="full">
+										  <option value="">- Kies een optie</option>
+										  <option value="1">Optie 1</option>
+										  <option value="2">Optie 2</option>
+										  <option value="3">Optie 3</option>
+										</select>
+									</div>
+									<div class="secondary"></div>
+								</div>
+							</div>
+							<div class="spacer"></div>
+
+							<div class="defaultFormV4">
+								<div class="elementWrapper">
+								<label class="main">Checkboxes</label>
+									<div class="primary">
+										<div class="subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditions" id="GeneralConditions" />
+											<label for="GeneralConditions" class="label">Lorem ipsum</label>
+										</div>
+										<div class="subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditions1" id="GeneralConditions1" />
+											<label for="GeneralConditions1" class="label">dolor sit</label>
+										</div>
+										<div class="subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditions2" id="GeneralConditions2" />
+											<label for="GeneralConditions2" class="label">amet</label>
+										</div>
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="elementWrapper">
+								<label class="main">Radiobuttons</label>
+									<div class="primary">
+										<div class="subElementWrapper">
+											<input type="radio" class="radio" name="RadioGroup1" id="GeneralConditions3" />
+											<label for="GeneralConditions3" class="label">Lorem ipsum</label>
+										</div>
+										<div class="subElementWrapper">
+											<input type="radio" class="radio" name="RadioGroup1" id="GeneralConditions4" />
+											<label for="GeneralConditions4" class="label">dolor sit</label>
+										</div>
+										<div class="subElementWrapper">
+											<input type="radio" class="radio" name="RadioGroup1" id="GeneralConditions5" />
+											<label for="GeneralConditions5" class="label">amet</label>
+										</div>
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="full elementWrapper">
+								<label class="main">textarea</label>
+									<div class="primary">
+										<textarea class="full"></textarea>
+									</div>
+									<div class="secondary">
+										<div class="soft">Soft/"help" tekst </div>
+									</div>
+								</div>
+								<div class="full elementWrapper">
+								<label class="main">Voornaam</label>
+									<div class="primary">
+										<input id="Firstname" class="full text" type="text" value="" name="Firstname" />
+									</div>
+									<div class="secondary">
+										<!-- <label class="label error"><i class="fa fa-exclamation-circle"></i>New validation style</label> -->
+									</div>
+								</div>
+								<div class="full padded elementWrapper">
+								<label class="main">Voornaam</label>
+									<div class="primary">
+										<input id="Firstname" class="full text" type="text" value="" name="Firstname" />
+									</div>
+									<div class="secondary"></div>
+								</div>		
+								<div class="full elementWrapper">
+								<label class="main">fixed widths mixed</label>
+									<div class="primary">
+										<input type="text" class="big1 text" value="" name="big1X" id="big1X" />
+										<input type="text" id="mini2X" name="mini2" value="" class="mini2 text">
+										<input type="text" id="mini2X1" name="mini2" value="" class="mini2 text">
+										<input type="text" id="CityX" name="City" value="" class="medium2 text">
+									</div>
+									<div class="secondary"></div>
+								</div>
+								<div class="full padded elementWrapper">
+								<label class="main">mix n match</label>
+								<p>Lorem ipsum dolor sit amet, equidem vivendum erroribus ei has, est et noster sapientem. Malis adipisci ea duo. Autem epicurei vix ea, summo mediocritatem at sit, graece adipisci consequat mea ut.</p>
+									<div class="primary">
+										<input type="text" class="fifth text" value="" name="PostalCode" id="fifth9" />
+										<input type="text" class="quarter text" value="" name="PostalCode2" id="quarter9" />
+										<input type="text" class="half text" value="" name="PostalCode2" id="third9" />
+									</div>
+									<div class="secondary">
+										<a href="#">a link</a>
+									</div>
+								</div>
+								<div class="full padded elementWrapper">
+								<label class="main">mix n match</label>
+									<div class="primary">
+										<div class="full elementWrapper subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditionsBi" id="GeneralConditionsBi" />
+											<label for="GeneralConditionsBi" class="label">
+												Lorem ipsum dolor sit amet, equidem vivendum erroribus ei has, est et noster sapientem. Malis adipisci ea duo. Autem epicurei vix ea, summo mediocritatem at sit, graece adipisci consequat mea ut.
+											</label>
+										</div>
+										<div class="full elementWrapper subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditionsB" id="GeneralConditionsB" />
+											<label for="GeneralConditionsB" class="label">
+												Te pro utamur dolorem dolores, ne purto primis tractatos eam. His graeci possim perpetua no, affert noster audire qui te, agam verterem inimicus ut nam. An illud ponderum pri, autem mundi possit vel ei.
+											</label>
+										</div>
+										<div class="full elementWrapper subElementWrapper">
+											<input type="checkbox" class="checkbox " name="GeneralConditions2B" id="GeneralConditions2B" />
+											<label for="GeneralConditions2B" class="label">Nec modus postea perfecto cu, ne sea corrumpit iracundia, et vix singulis nominati neglegentur. Nam ut nobis nonumy erroribus, vis id audiam omnesque appareat.</label>
+										</div>
+									</div>
+									<div class="secondary"></div>
+								</div>
+
+								
+								<input class="button" type="button" value="Button" />
+								<input class="submit right" type="submit" value="Submit" />
+								<input class="reset"type="reset" value="Reset" />
+							</form>
+						</div>
+						
+
+					</div>	
+				</div>
+								
+			</div>
+
+			<footer id="footer">
+				<div class="container-fluid">
+					<!-- Footer start -->
+					<!-- Footer end -->
+				</div>
+			</footer>
+
+		</div>
+		
+	<!-- Script includes start -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>	
+	<script type="text/javascript" src="js/style.js"></script>
+	<!-- Script includes end -->
+	</body>
+
+</html>

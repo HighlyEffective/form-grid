@@ -1,0 +1,182 @@
+.defaultFormV4,
+.defaultFormV4 * {
+	box-sizing: border-box;
+}
+	
+.defaultFormV4 .elementWrapper,
+.defaultFormV4 .subElementWrapper {
+	width:100%;
+	float:left;
+	margin-bottom:1em;
+}
+
+.defaultFormV4 .primary, 
+.defaultFormV4 .secondary {
+	display:inline;
+	margin-bottom:0;
+	width:100%;
+	float:left;
+}
+
+.defaultFormV4 .primary { max-width:262px; margin-right: 1.6em; }
+.defaultFormV4 .secondary { max-width: 259px; margin-top: 0.6em; }
+
+.defaultFormV4 .full .primary, 
+.defaultFormV4 .full .secondary { 
+	max-width:100%;
+	margin-right: 0; 
+}
+
+.defaultFormV4 .main {
+	width: auto;
+	float: none;
+	display:block;
+	margin-bottom: 0.4em;
+	font-weight:bold;
+}
+
+.defaultFormV4 p { 
+	margin: 0 0 0.8em 0;
+	display: inline-block;
+}
+
+.defaultFormV4 .text,  /* all "text" inputs */
+.defaultFormV4 select, 
+.defaultFormV4 textarea  {	
+	float:left;
+	display: inline-block;
+	max-width: 256px; 
+    margin: 0 5px 5px 0;
+    padding: .6em;
+	width: 100%;   
+    outline: 0;
+
+    background-color: #fff;
+    border: 1px solid #c0c0c0; 
+}
+
+.defaultFormV4 input.text:focus,
+.defaultFormV4 select:focus,
+.defaultFormV4 textarea:focus {
+     border-color: #A0A0A0;
+}
+
+.defaultFormV4 .full textarea,
+.defaultFormV4 .full .text { max-width: none;}
+	
+/* for 2column layout*/
+.defaultFormV4 .text.mini1 { max-width: 45px; }
+.defaultFormV4 .text.mini2 { max-width: 67px; }
+.defaultFormV4 .text.small1 { max-width: 74px; }
+.defaultFormV4 .text.small2 { max-width: 97px; }
+.defaultFormV4 .text.medium1 { max-width: 117px; }
+.defaultFormV4 .text.medium2 { max-width: 156px; }
+.defaultFormV4 .text.big1 { max-width:184px; }
+.defaultFormV4 .text.big2 { max-width:210px; }
+
+
+.defaultFormV4 .total { width: 100%; } /* not smart to use the class name full anymore. Thats why its "total" */
+.defaultFormV4 .half { width: 50%; }
+.defaultFormV4 .third { width: 33.333%; }
+.defaultFormV4 .quarter { width: 25%; }
+.defaultFormV4 .fifth { width: 20%; }
+
+.defaultFormV4 textarea {
+	min-height: 100px;
+	resize: vertical;
+	font: inherit;
+}
+
+.defaultFormV4 input.checkbox,
+.defaultFormV4 input.radio {
+	float:left;
+	width: auto;
+	margin: 0 5px 5px 0;
+}
+
+/* default background is for lightcolored backgrounds */
+.defaultFormV4 .full.padded { 
+	background-color: rgba(0, 0, 0, 0.03);
+    padding: 1.2em;
+    width: 100%;
+}
+	
+/* add this class if background is dark */	
+.defaultFormV4 .full.padded.white { background-color: rgba(255, 255, 255, 0.03); }
+
+.defaultFormV4 .subElementWrapper .label {
+	display: block;
+	padding-left: 1.4em;
+	word-wrap: break-word;
+}
+
+/* rightCol styles */
+.defaultFormV4 .secondary .soft {
+	opacity: 0.5;
+	width:100%;
+	float:left;
+	margin-bottom: .4em;
+}
+
+.defaultFormV4 .secondary i {
+	float:left;
+	display:inline-block;
+}
+
+.defaultFormV4 .secondary i {
+	position: absolute;
+	font-size: 1.2em;
+	margin-left: -1.2em;
+    line-height: 0.8em;
+	color: inherit;
+}
+
+/* Button(s) */
+.defaultFormV4 input.button,
+.defaultFormV4 input.reset,
+.defaultFormV4 input.submit {
+	float:left;
+	margin:0 .6em 0 0;
+	padding: 0.4em 1.4em;
+	width:auto;
+}
+
+.defaultFormV4 input.button.right,
+.defaultFormV4 input.reset.right,
+.defaultFormV4 input.submit.right {
+	float:right;
+	margin: 0 0 0 .6em;
+}
+
+
+/* for leftLabel layout */
+.defaultFormV4.leftLabel .main,
+.defaultFormV4 .leftLabel .main { /* add this class to the parent for labels to the left of inputs */
+	float:left;
+	margin-right:10px;
+	width: 120px;
+}
+
+.defaultFormV4.leftLabel .primary ,
+.defaultFormV4 .leftLabel .primary  {
+	margin-right:15px;
+	max-width: 220px;
+}
+
+.defaultFormV4.leftLabel .secondary ,
+.defaultFormV4 .leftLabel .secondary  {
+	max-width: 185px;
+}
+	
+/* misc. */
+.defaultFormV4 .spacer {
+	width:100%;
+	height:20px;
+}
+
+/* error label example */
+label.error {
+    padding-left: 1.6em;
+    padding-bottom: .4em;
+    color: #EA5200;
+}
